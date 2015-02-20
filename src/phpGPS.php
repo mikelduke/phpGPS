@@ -7,7 +7,7 @@
    * 
    * http://www.mikelduke.com
    * 
-   * @version 1.0
+   * @version 1.0.1
    * 
    * 2015-02-19
    */

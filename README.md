@@ -2,7 +2,7 @@
 A php based webservice for GPS tracking with Google Maps integration
 ========
 
-Version 1.0
+Version 1.0.1
 
 www.mikelduke.com
 
@@ -20,7 +20,7 @@ https://developers.google.com/maps/signup
 
 
 ## Features
-* Stores gps coordinates in a MySQL database, generates xml, and draws markers on to an Google Maps map.
+* Stores gps coordinates in a MySQL database, generates xml, and draws markers on to a Google Maps map.
 * Draw Paths on the map using the gps entries
 * Paths can be colored
 * Entries can be linked to paths, to a device, and a device to an owner

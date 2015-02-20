@@ -15,6 +15,7 @@
    * update.php?newEntry=Y&gps_device_id=1&gps_type_id=1&gps_path_id=1&gps_date_dt=11-13-2014&gps_date_time=22.31&gps_status=&gps_latitude=32.86181604&gps_longitude=-96.76354452&gps_altitude=160.0&gps_accuracy=57&gps_name=test spot&gps_comment=test comment&gps_address1=address 1&gps_address2=address 2&gps_address3=address 3&gps_city=city&gps_zipcode=567567&gps_state=state&gps_country=country
    */
   function newEntry($con) {
+    //TODO add debug mode to hide the extra output statements
     $gps_entry_date = "now()";
     $gps_device_id  = ((isset($_GET["gps_device_id"]) && $_GET["gps_device_id"] != "") ? $_GET["gps_device_id"] : phpGPS_Settings::$_defaultDeviceID);
     $gps_type_id    = ((isset($_GET["gps_type_id"])   && $_GET["gps_type_id"] != "")   ? $_GET["gps_type_id"]   : phpGPS_Settings::$_defaultTypeID);
