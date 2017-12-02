@@ -18,7 +18,7 @@
      * @param SQL $con database connection
      * @param Array $userGroups String array of usergroup names
      */
-    public function login($con, $userGroups) {
+    public function __construct($con, $userGroups) {
       session_start();
       
       if (isset($_GET["out"])) { //delete session vars and show logout msg w/ refresh link
