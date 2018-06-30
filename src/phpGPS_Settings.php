@@ -22,10 +22,10 @@
     public static $_title = "phpGPS";
     
     //Database Info
-    public static $_host = "DATABASE URL";
-    public static $_username = "DB USER";
-    public static $_password = "DB PASS";
-    public static $_dbname = "DB NAME";
+    public static $_host = "localhost";  //DB HOSTNAME
+    public static $_username = "phpgps"; //DB USER
+    public static $_password = "phpgps"; //DB PASS
+    public static $_dbname = "phpgps";   //DB NAME
     
     //Days to delay displaying markers
     public static $_markerDelay = 0;
