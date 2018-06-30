@@ -1,0 +1,5 @@
+export PHPGPS_DEV_KEY=""
+export PHPGPS_DB_HOSTNAME="localhost"
+export PHPGPS_DB_NAME="phpgps"
+export PHPGPS_DB_USER="phpgps"
+export PHPGPS_DB_PASS="phpgps"

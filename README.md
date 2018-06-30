@@ -2,8 +2,6 @@
 A php based webservice for GPS tracking with Google Maps integration
 ========
 
-Version 1.0.1
-
 www.mikelduke.com
 
 
@@ -15,6 +13,7 @@ http://getbootstrap.com/
 
 Get a Google Maps API Key:
 https://developers.google.com/maps/signup
+https://developers.google.com/maps/documentation/embed/get-api-key
 
 *******************************************************************************
 
@@ -30,7 +29,8 @@ https://developers.google.com/maps/signup
 * Can have multiple users to admin the system
 * Users can easily add new gps points either through the admin interface or using any external client capable of making HTTP GET requests.
 * On Android, it is simple to create a task using the app [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en) to generate the requests as desired. 
-* To embed on a webpage: <iframe src="view.php" height="520" width="520" seamless></iframe>
+* To embed on a webpage: 
+```<iframe src="view.php" height="520" width="520" seamless></iframe>```
 
 Example Update URL:
 	http://yoursite.com/phpGPS/addGpsEntry.php?key=1234&newEntry=Y&gps_devicename=DeviceID&gps_type_id=1&gps_path_id=1&gps_date_dt=11-13-2014&gps_date_time=22.31&gps_status=&gps_latitude=32&gps_longitude=-96&gps_altitude=160.0&gps_accuracy=57&gps_name=test%20spot&gps_comment=test%20comment&gps_address1=address%201&gps_address2=address%202&gps_address3=address%203&gps_city=city&gps_zipcode=567567&gps_state=state&gps_country=country
@@ -42,17 +42,24 @@ Example Update URL:
 
 
 ## Requirements
-* php 5
+* php 5+
 * MySQL
 * Webserver
 
 
 ## Install Instructions
 1. Extract php files to webhost
-2. Download bootstrap and extract to phpGPS/bootstrap
-3. Create Database for use by phpGPS
-4. Enter database settings and other config in phpGPS_Settings.php
-5. Open phpGPS/install/install.php in browser to create the necessary tables
-6. Delete the install folder on webhost
-7. Login as user admin/admin and change the default admin pass
-8. Set up owners, devices, paths, etc as desired and start creating markers
+1. Create Database for use by phpGPS
+1. Enter database settings and other config in phpGPS_Settings.php
+1. Open phpGPS/install/install.php in browser to create the necessary tables
+1. Delete the install folder on webhost
+1. Login as user admin/admin and change the default admin pass
+1. Set up owners, devices, paths, etc as desired and start creating markers
+
+# Demo VM
+Requires Vagrant + VM Provider like VirtualBox + Google Maps API Key
+* Clone this repo and make sure .sh files use unix line endings LF
+* Set API Key in phpGPS_Settings.php
+* Run ```vagrant up```
+* Connect at http://localhost
+* Login with user/password: admin/admin
