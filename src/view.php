@@ -66,12 +66,12 @@
     };
 
     function load(center, zoom) {
-      if (center == null || center == undefined) center = new google.maps.LatLng(<? echo $center ?>);
+      if (center == null || center == undefined) center = new google.maps.LatLng(<?php echo $center ?>);
       if (zoom == null || zoom == undefined) zoom = <?php echo $zoom == "" ? phpGPS_Settings::$_defaultZoom : $zoom ?>; 
       map = new google.maps.Map(document.getElementById("map"), {
         center: center,
         zoom: zoom,
-        mapTypeId: '<? echo phpGPS_Settings::$_defaultMapType ?>'
+        mapTypeId: '<?php echo phpGPS_Settings::$_defaultMapType ?>'
       });
       var infoWindow = new google.maps.InfoWindow;
 

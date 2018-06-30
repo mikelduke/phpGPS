@@ -116,6 +116,6 @@
 
   <h3><?php echo $title; ?></h3>
   <hr />
-  <? showMarkers($con, null); ?>
+  <?php showMarkers($con, null); ?>
   <br />
 <?php include 'footer.php' ?>

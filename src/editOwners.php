@@ -75,7 +75,7 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showOwners($con); ?>
+<?php showOwners($con); ?>
 <a onclick='downloadAndRefresh("insertRecord.php?insert=true&table=gps_owner&gps_owner_name=New Owner")' href='javascript:void(0);'>New Owner</a><br />
 
 <?php include 'footer.php'; ?>

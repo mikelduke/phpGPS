@@ -60,6 +60,6 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showDevices($con); ?>
+<?php showDevices($con); ?>
 <a onclick='downloadAndRefresh("insertRecord.php?insert=true&table=gps_device&gps_device_name=New Device")' href='javascript:void(0);'>New Device</a><br />
 <?php include 'footer.php'; ?>

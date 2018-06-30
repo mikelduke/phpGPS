@@ -52,6 +52,6 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showUsers($con); ?>
+<?php showUsers($con); ?>
 <a onclick='downloadAndRefresh("adminAddUser.php?user_name=New User")' href='javascript:void(0);'>New User</a><br />
 <?php include 'footer.php'; ?>

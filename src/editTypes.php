@@ -51,6 +51,6 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showTypes($con); ?>
+<?php showTypes($con); ?>
 <a onclick='downloadAndRefresh("insertRecord.php?insert=true&table=gps_type&gps_type_name=New Marker Type")' href='javascript:void(0);'>New Marker Type</a><br />
 <?php include 'footer.php'; ?>

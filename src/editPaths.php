@@ -80,6 +80,6 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showPaths($con); ?>
+<?php showPaths($con); ?>
 <a onclick='downloadAndRefresh("insertRecord.php?insert=true&table=gps_path&gps_path_name=New Path")' href='javascript:void(0);'>New Path</a><br />
 <?php include 'footer.php'; ?>

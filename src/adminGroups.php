@@ -49,6 +49,6 @@
 ?>
 <h3><?php echo $title; ?></h3>
 <hr />
-<? showGroups($con); ?>
+<?php showGroups($con); ?>
 <a onclick='downloadAndRefresh("insertRecord.php?insert=true&table=user_types&user_type_name=New Type")' href='javascript:void(0);'>New Type</a><br />
 <?php include 'footer.php'; ?>
