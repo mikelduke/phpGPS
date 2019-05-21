@@ -38,14 +38,14 @@
 
     // override defaults from environment variables if defined
     static function init() {
-      phpGPS_Settings::$_host     = phpGPS_Settings::loadFromEnv("db_hostname", phpGPS_Settings::$_host);
-      phpGPS_Settings::$_username = phpGPS_Settings::loadFromEnv("db_username", phpGPS_Settings::$_username);
-      phpGPS_Settings::$_password = phpGPS_Settings::loadFromEnv("db_password", phpGPS_Settings::$_password);
-      phpGPS_Settings::$_dbname   = phpGPS_Settings::loadFromEnv("db_name",     phpGPS_Settings::$_dbname);
+      phpGPS_Settings::$_host     = phpGPS_Settings::loadFromEnv("DB_HOSTNAME", phpGPS_Settings::$_host);
+      phpGPS_Settings::$_username = phpGPS_Settings::loadFromEnv("DB_USERNAME", phpGPS_Settings::$_username);
+      phpGPS_Settings::$_password = phpGPS_Settings::loadFromEnv("DB_PASSWORD", phpGPS_Settings::$_password);
+      phpGPS_Settings::$_dbname   = phpGPS_Settings::loadFromEnv("DB_NAME",     phpGPS_Settings::$_dbname);
 
-      phpGPS_Settings::$_devKey   = phpGPS_Settings::loadFromEnv("dev_key", phpGPS_Settings::$_devKey);
+      phpGPS_Settings::$_devKey   = phpGPS_Settings::loadFromEnv("DEV_KEY", phpGPS_Settings::$_devKey);
 
-      phpGPS_Settings::$_secretKey = phpGPS_Settings::loadFromEnv("secret_key", phpGPS_Settings::$_secretKey);
+      phpGPS_Settings::$_secretKey = phpGPS_Settings::loadFromEnv("SECRET_KEY", phpGPS_Settings::$_secretKey);
     }
 
     private static function loadFromEnv($name, $default) {
