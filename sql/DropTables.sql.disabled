@@ -1,4 +1,5 @@
 -- Drops tables used in phpGPS
+-- Rename to .sql
 
 drop table users;
 drop table user_types;
