@@ -11,7 +11,7 @@ services:
      - DB_NAME=phpgps
      - DB_USER=phpgps
      - DB_PASSWORD=password
-     - DEV_KEY # set dev key here or set as envvar on local machine to passthrough
+     - DEV_KEY # set dev key here or export as envvar on local machine to passthrough
     networks:
       - test
   mysql:
