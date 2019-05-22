@@ -223,7 +223,7 @@
         var lat = newMarkers[i].getPosition().lat();
         var long = newMarkers[i].getPosition().lng();
         //TODO add passing in gps_date column, parsing from current date/time and adding editing for this field on edit marker page
-        var url = "insertRecord.php?insert=true&table=gps_entries&gps_latitude=" + lat + "&gps_longitude=" + long + "&gps_entry_date=now()&gps_name=" + newMarkers[i].name;
+        var url = "insertRecord.php?insert=true&table=gps_entries&gps_latitude=" + lat + "&gps_longitude=" + long + "&gps_entry_date=now()&gps_date=now()&gps_name=" + newMarkers[i].name;
         //prompt('', url);
         downloadUrl(url, function(data) {});
       }

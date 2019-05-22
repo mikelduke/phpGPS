@@ -49,7 +49,9 @@
       $field = phpGPS_DB::cleanInput($key);
       $val = phpGPS_DB::cleanInput($value);
   
-      if ($val != "NULL") $val = "'" . $val . "'";
+      if ($val != "NULL" && $val !== "now()") {
+        $val = "'" . $val . "'";
+      }
       if ($hasValues) {
         $columns = $columns . ", ";
         $values = $values . ", ";
