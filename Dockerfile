@@ -10,6 +10,7 @@ ENV PORT 80
 ENV APACHE_RUN_USER=daemon
 
 COPY src/ /var/www/html/
+RUN rm -rf /var/www/html/install
 
 # Set Port https://github.com/docker-library/php/issues/94
 CMD sed -i "s/80/$PORT/g" /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf && docker-php-entrypoint apache2-foreground
